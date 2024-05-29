@@ -61,8 +61,15 @@ createApp({
         }
     },
     methods: {
-        cambioValoreAttivo: function(){
-            isActive = !isActive
+        nextSlide() {
+            const currentIndex = this.slides.findIndex(slide => slide.isActive);
+            this.slides[currentIndex].isActive = false;
+            if(currentIndex < this.slides.length - 1){
+                this.slides[currentIndex + 1] = true;
+            }else{
+                this.slides[0].isActive = true;
+            }
+            
         }
     }
 }).mount('#app')
