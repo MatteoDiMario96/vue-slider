@@ -65,14 +65,6 @@ createApp({
                 this.slides[this.slides.length - 1].isActive = true;
                 this.slides[this.slides.length - 1].class = "isActive";
             }           
-        },
-        aggiungiClasse:function( elemento ){
-            const currentIndex = this.slides.findIndex(slide => slide.isActive);
-            if(this.slides[currentIndex].class === "isActive"){
-                this.slide.classList.add("isActive");
-            }else{
-                this.slide.classList.remove("isActive");
-            }
-            }
+        }
     }
 }).mount('#app')
