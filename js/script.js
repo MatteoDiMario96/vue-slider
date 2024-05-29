@@ -70,6 +70,7 @@ createApp({
                 this.slides[0].isActive = true;
             }
             
+            
         },
         prevSlide() {
             const currentIndex = this.slides.findIndex(slide => slide.isActive);
@@ -78,8 +79,7 @@ createApp({
                 this.slide[currentIndex - 1 ] = true;
             }else{
                 this.slides[this.slides.length - 1] = true;
-            }
-            
+            }           
         }
     }
 }).mount('#app')
