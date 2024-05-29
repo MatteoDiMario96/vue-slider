@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+.slider-wrapper{
+    display: flex;
+    align-items: center;
+}
+
 .item {
     float: left;
     width: 700px;
@@ -22,6 +27,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+a{
+    color: black;
+    margin: 1rem;
 }
 
 .item .text {
