@@ -59,5 +59,10 @@ createApp({
                     }
                 ]
         }
+    },
+    methods: {
+        cambioValoreAttivo: function(){
+            isActive = !isActive
+        }
     }
 }).mount('#app')
