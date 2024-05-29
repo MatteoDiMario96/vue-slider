@@ -18,7 +18,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
                 <div class="left-arrow">
-                    <i @click="" class="fa-solid fa-arrow-left fa-2xl"></i>
+                    <i @click="prevSlide" class="fa-solid fa-arrow-left fa-2xl"></i>
                 </div>
                 <div  class="item">
                     <span v-for="(slide, indice) in slides" :keys="indice">                        
@@ -34,7 +34,7 @@
                 </div>
                 <div class="right-arrow"> 
                     <a href="#">
-                        <i @click="" class="fa-solid fa-arrow-right fa-2xl"></i>
+                        <i @click="nextSlide" class="fa-solid fa-arrow-right fa-2xl"></i>
                     </a>
                 </div>
             </div>
