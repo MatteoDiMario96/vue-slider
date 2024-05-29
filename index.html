@@ -16,6 +16,12 @@
 <body>
     <div id="app">
         <div class="container">
+            <div class="thumbnails">
+                <div v-for="(slide, indice) in slides" :keys="indice">
+                    <img :src="slide.image" alt="" :class="slide.class">
+                </div>
+            </div>
+
             <div class="slider-wrapper" tabindex="0">
                 <div class="left-arrow">
                     <i @click="prevSlide" class="fa-solid fa-arrow-left fa-2xl"></i>
@@ -32,10 +38,8 @@
                         </div>
                     </span>
                 </div>
-                <div class="right-arrow"> 
-                    <a href="#">
-                        <i @click="nextSlide" class="fa-solid fa-arrow-right fa-2xl"></i>
-                    </a>
+                <div class="right-arrow">
+                    <i @click="nextSlide" class="fa-solid fa-arrow-right fa-2xl"></i>                    
                 </div>
             </div>
         </div>
